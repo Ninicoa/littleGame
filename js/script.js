@@ -28,7 +28,7 @@ const loop = setInterval(()=>{
         criminoso.style.animation = 'none';
         criminoso.style.bottom = `${criminosoPosition}px`;
 
-        criminoso.src = '/img/criminoso.preso.png';
+        criminoso.src = './img/criminoso.preso.png';
         criminoso.style.width = '120px'
         criminoso.style.marginLeft = '-25px'
         
