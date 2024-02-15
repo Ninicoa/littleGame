@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #f80202;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#e61f1f,#720e0e);
+
+}
+
+.nuvem {
+    top: 50px;
+    position: absolute;
+    width: 100px;
+    animation: nuvem-animation 10s infinite linear;
+}
+
+.uzomi {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    
+    animation: uzomi-animation 2s infinite linear;
+}
+
+.criminoso{
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.pulo{
+    animation: criminoso-pulo-animation 700ms  ease-in-out;
+}
+
+@keyframes uzomi-animation {
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes criminoso-pulo-animation {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+
+    60% {
+        bottom: 200px;
+    }
+
+    70% {
+        bottom: 195px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes nuvem-animation {
+    from {
+        right: -120px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+#recarregar {
+    position: absolute;
+    font-size:20px;
+    padding:10px 20px;
+    background-color: #c02020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
